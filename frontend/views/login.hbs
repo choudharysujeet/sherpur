@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            width: 100%;
+            padding: 5px;
+            font-size: 50px;
+            background-color: rgb(255, 183, 0);
+            text-align: center;
+            font-style: italic;
+            text-shadow: 3px 3px 2px black;
+            color: antiquewhite;
+            box-shadow: 0px 6px 5px rgb(38, 49, 50);
+        }
+        #cont{
+            height: auto;
+            width: 30%;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: bisque;
+            border-radius: 10px;
+            box-shadow: 0px 5px 2px black;
+            margin: 5% 20% 1% 25%;
+        }
+        label,input{
+            font-size: 150%;
+            margin: 3%;
+            width: 60%;
+        }
+        
+        #go{
+            color: red;
+            margin-top: 2%;
+            margin-left: 36%;
+            padding: 10px;
+            margin-bottom: 4%;
+        }
+        #login{
+            font-size: 150%;
+            margin: 10% 15%;
+            width: 70%;
+            background-color: rgb(45, 45, 248);
+        }
+        #user{
+            font-size: 140%;
+            margin-left: 30%;
+            margin-top: 2%;
+        }
+        #footer{
+            height: auto;
+            width: 100%;
+            background-color: black;
+            border-radius: 4px;
+            text-align: center;
+            color:white;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        @media screen and (min-width:40px) and (max-width:430px){
+            h1{
+                width: 100%;
+                font-size: 25px;
+                background-color: aqua;
+            }
+            #cont{
+                width: 80%;
+                margin: 10%;
+            }
+            input{
+                width: 80%;
+                margin: 6%;
+            }
+            label{
+                margin: 6%;
+            }
+            #user{
+                margin-left: 22%;
+            }
+           
+        }
+        @media screen and (min-width:430px) and (max-width:700px){
+            h1{
+                width: 100%;
+                font-size: 30px;
+                background-color: rgb(0, 255, 55);
+            }
+            #cont{
+                width: 80%;
+                margin: 10%;
+            }
+            input{
+                width: 70%;
+                margin: 7%;
+            }
+            label{
+                margin: 6%;
+            }
+           
+        }
+        @media screen and (min-width:700px) and (max-width:1100px){
+            h1{
+                font-size: 35px;
+                background-color: aqua;
+            }
+            #cont{
+                width: 60%;
+                margin: 15% 20% 5% 20%;
+            }
+            input{
+                width: 60%;
+                margin: 6%;
+            }
+            label{
+                margin: 4%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO SHERPUR PANCHAYAT</h1>
+
+    <div id="nav">
+        <button onclick="openNav()"><i id="menubar" class="fa-solid fa-bars"></i></button>
+       
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <hr>
+            <br>
+            <a href="/" >Home</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+          </div>
+    </div>
+
+
+<div id="cont">
+    <div id="log">
+        <form action="/login" method="post">
+        <label for="user">Email</label>
+        <input type="email" placeholder="user name" required name="email">
+        <br>
+        <label for="password">password</label>
+        <input type="password" placeholder="password" required name="password">
+        <button id="login">Login</button>
+        </form>
+    </div>
+</div>
+    <p id="user">New User ? <a href="/register">Register Now</a></p>
+    <a href="/"><button id="go">GO HOME</button></a>
+
+    <footer id="footer">
+        <p>Made By Sujeet Kumar</p>
+        &hearts;@Copyright2024&hearts;
+        <p>Contact</p>
+        <p>7281929165</p>
+
+    </footer>
+
+    <script src="js/index.js"></script> 
+</body>
+</html>

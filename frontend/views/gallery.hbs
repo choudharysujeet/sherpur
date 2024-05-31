@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+    }  
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create four equal columns that sits next to each other */
+    .column {
+      -ms-flex: 25%; /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+    
+
+<body>
+    <h1>WELCOME TO SHERPUR PANCHAYAT</h1>
+    <div id="nav">
+        <button onclick="openNav()"><i id="menubar" class="fa-solid fa-bars"></i></button>
+       
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <hr>
+            <br>
+            <a href="/" >Home</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+          </div>
+    </div>
+
+    <div class="row"> 
+        <div class="column">
+          <a target="_blank" href="images/image.jpeg">
+            <img src="images/image.jpeg" style="width:100%">
+          </a>
+        </div>
+
+        <div class="column">
+          <a target="_blank" href="images/image2.jpeg">
+            <img src="images/image2.jpeg" style="width:100%">
+          </a>
+          <a target="_blank" href="images/Error.webp">
+            <img src="images/Error.webp" style="width:100%">
+          </a>
+           <a target="_blank" href="images/slide1.jpeg">
+            <img src="images/slide1.jpeg" style="width:100%">
+          </a>
+         <a target="_blank" href="images/slide3.jpeg">
+            <img src="images/slide3.jpeg" style="width:100%">
+          </a>
+ 
+        </div> 
+
+        <div class="column">
+          <a target="_blank" href="images/image3.jpeg">
+            <img src="images/image3.jpeg" style="width:100%">
+          </a>
+          <a target="_blank" href="images/slide1.jpeg">
+            <img src="images/slide1.jpeg" style="width:100%">
+          </a>
+         <a target="_blank" href="images/image4.jpeg">
+            <img src="images/image4.jpeg" style="width:100%">
+          </a>   
+          <a target="_blank" href="images/image6.jpeg">
+            <img src="images/image6.jpeg" style="width:100%">
+          </a>       
+            
+        </div>
+
+        <div class="column">
+          <a target="_blank" href="images/slide2.jpeg">
+            <img src="images/slide2.jpeg" style="width:100%">
+          </a>
+          <a target="_blank" href="images/slide1.jpeg">
+            <img src="images/slide1.jpeg" style="width:100%">
+          </a>
+         <a target="_blank" href="images/image5.jpeg">
+            <img src="images/image5.jpeg" style="width:100%">
+          </a>
+          <a target="_blank" href="images/image8.jpeg">
+            <img src="images/image8.jpeg" style="width:100%">
+          </a>       
+        
+        </div>
+
+      </div>
+
+    <footer id="footer">
+        <p>Made By Sujeet Kumar</p>
+        &hearts;@Copyright2024&hearts;
+        <p>Contact</p>
+        <p>7281929165</p>
+
+    </footer>
+
+    <script src="js/index.js"></script>   
+</body>
+</html>

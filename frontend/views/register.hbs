@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Registation</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            width: 100%;
+            padding: 5px;
+            margin-top: 0%;
+            font-size: 50px;
+            background-color: rgb(255, 183, 0);
+            text-align: center;
+            font-style: italic;
+            text-shadow: 3px 3px 2px black;
+            color: antiquewhite;
+            box-shadow: 0px 6px 5px rgb(38, 49, 50);
+        }
+        #reg{
+            margin-bottom: 5%;
+            text-align: center;
+        }
+        #form{
+            height: auto;
+            width: 60%;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: bisque;
+            border-radius: 50px;
+            box-shadow: 0px 5px 2px black;
+
+        }
+        
+        #form label{
+            padding: 3%;
+            margin-left: 5%;
+        }
+        input{
+        
+            margin: 2% 0% 1% 6%;
+            width: 50%;
+        }
+        #container-form{
+            margin: 5% 20% 5% 30%;
+        }
+        #submit ,#Go{
+            margin-top: 3%;
+            width: auto;
+            padding: 2%;
+            margin-left: 40%;
+            border-radius: 5%;
+        }
+        #Vmail {
+            text-align: center;
+        }
+        #Go{
+            color: red;
+            margin-top: 5%;
+            margin-left: 20%;
+        }
+        #log{
+            font-size: 150%;
+            margin-left: 5%;
+        }
+        #footer{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            border-radius: 4px;
+            text-align: center;
+            color:white;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        @media screen and (min-width:40px) and (max-width:430px){
+            #form label{
+                
+                margin-left: 10%;
+            }
+            h1{
+                width: 100%;
+                font-size: 25px;
+                background-color: aqua;
+            }
+            #form{
+                width: 100%;
+            }
+            #container-form{
+        
+                margin-top: 15%;
+                margin-left: 20%;
+            }
+            input{
+                margin-left: 10%;
+                width: 60%;
+            }
+            #reg{
+                font-size: 110%;
+            }
+        }
+        
+        @media screen and (min-width:430px) and (max-width:700px){
+            #form label{
+                margin-left: 15%;
+            }
+            h1{
+                width: 100%;
+                font-size: 30px;
+                background-color: aqua;
+            }
+            #form{
+                width: 100%;
+            }
+            #container-form{
+                margin-top: 15%;
+                margin-left: 20%;
+            }
+            input{
+                margin-left: 15%;
+                width: 60%;
+            }
+            
+        }    
+        @media screen and (min-width:700px) and (max-width:1100px){
+            #form label{
+                margin-left: 5%;
+            }
+            h1{
+                font-size: 35px;
+                background-color: aqua;
+            }
+            #container-form{
+                    width: 75%;
+                    margin-top: 15%;
+                    margin-left: 25%;
+            }
+            
+            input{
+                width: 50%;
+                margin-left: 0%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO SHERPUR PANCHAYAT</h1>
+
+    <div id="nav">
+        <button onclick="openNav()"><i id="menubar" class="fa-solid fa-bars"></i></button>
+       
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <hr>
+            <br>
+            <a href="/" >Home</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/contact">Contact</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+          </div>
+    </div>
+
+
+    <div id="container-form">
+    <form id="form" action="/register" method="post">
+        <h2 id="reg">REGISTRATION</h2>
+        <label for="Name">First Name</label>
+        <input type="text" placeholder="First Name" required name="name">
+        <br>
+        <label for="Last Name">Last Name</label>
+        <input type="text" placeholder="Last Name" required name="lastname">
+        <br>
+        <label for="DOB">DOB</label>
+        <input type="date" required name="dob">
+        <br>
+        <label for="Age">Age</label>
+        <input type="number" placeholder="Age" required name="age">
+        <br>
+        <label for="Phone">Phone No</label>
+        <input type="tel" placeholder="Phone No" required name="PhoneNumber" minlength="10" maxlength="10">
+        <br>
+        <label for="Email">Email id</label>
+        <input type="email" placeholder="Email id" required name="email">
+        <br>
+        <label for="password">Set password</label>
+        <input type="password" placeholder="password" required name="password" minlength="4" maxlength="8">
+        <br>
+        <label for="confirm password">Confirm password</label>
+        <input type="password" placeholder="Confirm password" required name="confirmpassword" minlength="4" maxlength="8">
+        
+        <input id="submit" type="submit">
+
+    
+    </form>
+    <a href="/"><button id="Go">GO Home </button></a>
+    <a id="log" href="/login">Login</a>
+    </div>
+
+    <footer id="footer">
+        <p>Made By Sujeet Kumar</p>
+        &hearts;@Copyright2024&hearts;
+        <p>Contact</p>
+        <p>7281929165</p>
+    </footer>
+    
+    <script src="js/index.js"></script> 
+</body>
+</html>
